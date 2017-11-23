@@ -6,12 +6,12 @@ using System.Web.Mvc;
 
 namespace SimpleMVCBlog.Areas.Admin.Controllers
 {
-    public class UsersController : Controller
+    public class PostsController : Controller
     {
-        // GET: Admin/Ussers
+        // GET: Admin/Posts
         public ActionResult Index()
         {
-            return Content("Admin user area!");
+            return View();
         }
     }
 }
