@@ -11,7 +11,7 @@ namespace SimpleMVCBlog.Controllers
         
         public ActionResult Login()
         {
-            return Content("HEY!");
+            return View();
         }
     }
 }

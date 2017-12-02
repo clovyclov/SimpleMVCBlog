@@ -8,5 +8,9 @@ namespace SimpleMVCBlog.Controllers
 {
     public class PostsController : Controller
     {
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }
