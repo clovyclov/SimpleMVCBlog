@@ -1,12 +1,24 @@
-﻿@{ 
+﻿@model SimpleMVCBlog.ViewModels.AuthLogin
+      
+@{ 
     ViewBag.Title = "Login";
 }
 
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <div>
+        @Html.LabelFor(x => x.Username)
+        @Html.EditorFor(x => x.Username)
+    </div>
 
-    <h1>Posts Index</h1>
+    <div>
+        @Html.LabelFor(x => x.Password)
+        @Html.EditorFor(x => x.Password)
+    </div>
 
-    <p>
-        <a href="@Url.RouteUrl("login")">Click Here to login!</a>
-    </p>
-</body>
-</html>
+    <div>
+        <input type="submit" value="Submit" />
+    </div>
+}
+
